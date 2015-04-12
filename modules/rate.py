@@ -5,7 +5,7 @@ import re
 def rate(bot, trigger):
 	"""Allows you to rate the video being played, from 0 to 10."""
 	vid_name = bot.matches_tab[bot.tmp]
-	reg = re.compile('([a-zA-Z0-9-_,.!()& ]+;){6}[a-zA-Z0-9-_,.!()& ]+(;[a-zA-Z0-9-_,.!()& ]+)?')
+	reg = re.compile('(*;){6}*(;*)?')
 	if not reg.match(vid_name):
 		bot.say("Name format unrecognised. Sorry, I can't let you rate a video like that! \
 Head over here to fix that: https://docs.google.com/spreadsheets/d/1pkhEiTmSAUPZ0zEYvjfYRvCakCbB3KJI3-eTcbzCjzs/edit?usp=sharing")
