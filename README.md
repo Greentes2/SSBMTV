@@ -8,7 +8,7 @@ That's why you can help me with it!
 
 # How do I use this code?
 
-Simple, just install [willie](https://github.com/embolalia/willie) the bot, then clone this repository into willie (which should be somewhere in the Python libs), and override its files with these files. To run it though, you must change some settings in its configuration files.
+Simple, just install [willie](https://github.com/embolalia/willie) the bot, then clone this repository into willie (which should be somewhere in the Python libs), and override its files with these files. To run it though, you must change some settings in its configuration files. You also need the VLC Python bindings, you can find them [here](http://git.videolan.org/?p=vlc/bindings/python.git;a=blob_plain;f=generated/vlc.py;hb=HEAD).
 
 # List of bugs to fix ASAP:
 
