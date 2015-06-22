@@ -4,7 +4,7 @@ import re
 @willie.module.commands('nowplaying', 'np')
 def nowplaying(bot, trigger):
 	"""Gives informations about the video being played."""
-	reg = re.compile('(*;){6}*(;*)?')
+	reg = re.compile('(.*;){6}.*(;.*)?')
 	vid_name = bot.matches_tab[bot.tmp]
 	if (reg.match(vid_name)):
 		l = vid_name[:-4].split(";")

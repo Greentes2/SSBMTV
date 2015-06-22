@@ -9,11 +9,11 @@ def voteskip(bot, trigger):
 			bot.say("Starting a skip vote. Type !voteskip or !vs to vote to skip the current video.")
 			bot.voteskip = bot.voteskip + 1
 			bot.voters.append(trigger.nick)
-			bot.say(trigger.nick + " voted for the skip!")
-		elif bot.voteskip >= 6:
+			bot.say(trigger.nick + " voted for the skip! 5 remaining votes before skip.")
+		elif bot.voteskip >= 5:
 			bot.say(trigger.nick + " voted for the skip! Vote succesful, skipping the current video!")
 			next(bot, None)
 		else:
 			bot.voteskip = bot.voteskip + 1
 			bot.voters.append(trigger.nick)
-			bot.say(trigger.nick + " voted for the skip!")
+			bot.say(trigger.nick + " voted for the skip! " + str(6 - bot.voteskip) + " remaining votes before skip.")

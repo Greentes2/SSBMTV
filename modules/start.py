@@ -1,7 +1,5 @@
 import willie.module
 from willie.modules.next import next
-import json
-from time import sleep
 
 @willie.module.commands('start')
 @willie.module.require_admin("You're not allowed to do that.")

@@ -30,7 +30,7 @@ from willie.trigger import Trigger
 import willie.module as module
 from willie.logger import get_logger
 
-import vlc, os, random
+import vlc, os, random, praw, string
 
 
 LOGGER = get_logger(__name__)
@@ -68,6 +68,7 @@ class Willie(irc.Bot):
         self.voteskip = 0
         self.voters = []
         self.rates_tab = {}
+        self.praw_r = praw.Reddit(user_agent=''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6)) + ", by /u/nephophobic for SSBMTV's eyebleach command")
         try:
             in_file = open("ratings.json", "r")
             self.rates_tab = json.load(in_file)
