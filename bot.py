@@ -54,7 +54,7 @@ class Willie(irc.Bot):
         self.vlc_instance = vlc.Instance()
         self.matches_tab = []
         print("Gathering videos...")
-        for match in os.listdir("Matches\\"):
+        for match in os.listdir("matches\\"):
             self.matches_tab.append(match)
         print("Shuffling videos' list...")
         random.shuffle(self.matches_tab)
