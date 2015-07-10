@@ -5,9 +5,10 @@ import re
 def nowplaying(bot, trigger):
 	"""Gives informations about the video being played."""
 
-        lp_list = ["Apex 2013",
+        lp_list = {"Apex 2013",
                    "Apex 2014",
                    "APEX 2015",
+                   "Avalon VI",
                    "B.E.A.S.T 4",
                    "B.E.A.S.T 5",
                    "Beauty10",
@@ -25,7 +26,7 @@ def nowplaying(bot, trigger):
                    "SSS 30",
                    "WHOBO MLG",
                    "Zenith 2013",
-                   "Zenith 2014"]
+                   "Zenith 2014"}
 
 	reg = re.compile('(.*;){6}.*(;.*)?')
 	vid_name = bot.matches_tab[bot.tmp]
