@@ -8,6 +8,7 @@ def nowplaying(bot, trigger):
         lp_list = {"Apex 2013",
                    "Apex 2014",
                    "APEX 2015",
+                   "Avalon IV",
                    "Avalon VI",
                    "B.E.A.S.T 4",
                    "B.E.A.S.T 5",
